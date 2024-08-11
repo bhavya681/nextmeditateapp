@@ -31,3 +31,72 @@ body {
     text-wrap: balance;
   }
 }
+
+/* styles.css or a CSS module if preferred */
+
+.fire-effect {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 69, 0, 0.5),
+    rgba(139, 0, 0, 0.1)
+  );
+  animation: flicker 1.5s infinite alternate-reverse;
+  pointer-events: none;
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+}
+
+
+/* styles.css or a CSS module */
+
+.om-symbol {
+  animation: float 15s infinite alternate;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+  }
+}
+
+
+@keyframes flicker {
+  0% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+
+/* Hide scrollbar for Webkit browsers */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbar for all browsers */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+/* Enable smooth scrolling */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}

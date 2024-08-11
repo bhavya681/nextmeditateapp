@@ -1,0 +1,104 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Introduction to Meditation",
+      "slug": "introduction-to-meditation",
+      "description": "Begin your journey with meditation by learning basic techniques to calm the mind and improve focus.",
+      "price": 49.99,
+      "instructor": "Anita Patel",
+      "isFeatured": true,
+      "image": "/courses/meditation-intro.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Mindfulness for Stress Relief",
+      "slug": "mindfulness-for-stress-relief",
+      "description": "Learn mindfulness practices to reduce stress and promote mental clarity in daily life.",
+      "price": 59.99,
+      "instructor": "David Chen",
+      "isFeatured": false,
+      "image": "/courses/mindfulness.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Guided Relaxation Techniques",
+      "slug": "guided-relaxation-techniques",
+      "description": "Enhance relaxation through guided meditation sessions focusing on tension release and peace.",
+      "price": 69.99,
+      "instructor": "Emily Green",
+      "isFeatured": true,
+      "image": "/courses/relaxation.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Advanced Meditation Practices",
+      "slug": "advanced-meditation-practices",
+      "description": "For experienced practitioners, explore advanced techniques to deepen meditation practice.",
+      "price": 79.99,
+      "instructor": "Michael Brown",
+      "isFeatured": false,
+      "image": "/courses/advanced-meditation.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Chakra Healing Meditation",
+      "slug": "chakra-healing-meditation",
+      "description": "Learn how to balance and heal your energy centers through chakra-focused meditations.",
+      "price": 89.99,
+      "instructor": "Samantha Lin",
+      "isFeatured": false,
+      "image": "/courses/chakra.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Meditation for Productivity",
+      "slug": "meditation-for-productivity",
+      "description": "Boost your focus and productivity with meditation techniques designed to clear mental clutter.",
+      "price": 99.99,
+      "instructor": "Alex Johnson",
+      "isFeatured": true,
+      "image": "/courses/productivity.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Visualization and Guided Imagery",
+      "slug": "visualization-and-guided-imagery",
+      "description": "Harness your imagination to create positive mental images supporting your goals and dreams.",
+      "price": 109.99,
+      "instructor": "Laura Mitchell",
+      "isFeatured": false,
+      "image": "/courses/visualization.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Meditation for Children",
+      "slug": "meditation-for-children",
+      "description": "Introduce young children to meditation with fun and engaging practices to cultivate calmness.",
+      "price": 39.99,
+      "instructor": "James Wong",
+      "isFeatured": true,
+      "image": "/courses/children-meditation.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Mindful Living",
+      "slug": "mindful-living",
+      "description": "Incorporate mindfulness into daily activities to enhance awareness and fulfillment in life.",
+      "price": 69.99,
+      "instructor": "Grace Kim",
+      "isFeatured": false,
+      "image": "/courses/mindful-living.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Breathwork and Meditation",
+      "slug": "breathwork-and-meditation",
+      "description": "Explore the connection between breath and meditation to achieve greater mental clarity and peace.",
+      "price": 89.99,
+      "instructor": "Ethan Carter",
+      "isFeatured": true,
+      "image": "/courses/breathwork.jpg"
+    }
+  ]
+}
