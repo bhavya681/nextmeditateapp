@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react';
 
 // Mock data fetch function
 const fetchCourseData = async (slug: string) => {
-  // Simulate data fetching based on slug
   const data = {
     'deep-meditation': {
       title: 'Deep Meditation',
@@ -17,9 +16,7 @@ const fetchCourseData = async (slug: string) => {
       description: 'Practice mindfulness and become more aware of the present moment with our guided sessions.',
       image: 'https://replicate.delivery/yhqm/z7vBzTNeAQ17baisfAtVBrgoGrbOWjQvax5cqGY6FCgNmnRTA/out-0.webp',
     },
-    // Add more mock data as needed
   };
-
   return data[slug] || { title: 'Not Found', description: 'No data available for this slug.', image: '' };
 };
 
@@ -57,4 +54,14 @@ const CoursePage = () => {
         <div className="mt-8 text-center">
           <a
             href="/courses"
-            className="px-5 py-2 rounded-full bg-indigo-600 text-white hover:bg-indigo-700
+            className="px-5 py-2 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 transition duration-200"
+          >
+            Back to All Courses
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CoursePage;
