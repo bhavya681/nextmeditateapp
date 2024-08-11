@@ -1,8 +1,4 @@
-// app/courses/[slug]/page.tsx
-
-"use client";
-
-import { useParams } from 'react-router-dom';
+import { useRouter } from 'next/router';
 import React, { useState, useEffect } from 'react';
 
 // Mock data fetch function
@@ -27,12 +23,13 @@ const fetchCourseData = async (slug: string) => {
 };
 
 const SlugData = () => {
-  const { slug } = useParams();
+  const router = useRouter();
+  const { slug } = router.query;
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
     if (slug) {
-      fetchCourseData(slug).then(result => setData(result));
+      fetchCourseData(slug as string).then(result => setData(result));
     }
   }, [slug]);
 
