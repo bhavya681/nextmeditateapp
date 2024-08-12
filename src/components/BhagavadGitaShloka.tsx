@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const shlokas = [
   {
@@ -50,11 +51,13 @@ const BhagavadGitaShlok = () => {
       <div className="max-w-4xl w-full bg-gray-800 bg-opacity-80 rounded-lg shadow-lg overflow-hidden p-6">
         <div className="grid grid-cols-2 gap-4 mb-8">
           {images.map((src, index) => (
-            <img
+            <Image
               key={index}
               src={src}
               alt={`Ancient illustration ${index + 1}`}
               className="w-full h-auto rounded-lg shadow-md"
+              width={500} height={300}
+              
             />
           ))}
         </div>
