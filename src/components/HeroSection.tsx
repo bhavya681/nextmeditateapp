@@ -16,7 +16,7 @@ const HeroSection = () => {
         </h1>
 
         <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
-          Immerse yourself in our meditation courses designed to guide you on a journey toward mindfulness and tranquility. Whether you're new to meditation or seeking to deepen your practice, join us to unlock your inner peace.
+          Immerse yourself in our meditation courses designed to guide you on a journey toward mindfulness and tranquility. Whether you&apos;re new to meditation or seeking to deepen your practice, join us to unlock your inner peace.
         </p>
 
         <div className="mt-4">
