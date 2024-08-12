@@ -1,5 +1,6 @@
 // app/stress-relief/page.tsx
 
+import Image from 'next/image';
 import React from 'react';
 
 const StressRelief = () => {
@@ -10,10 +11,11 @@ const StressRelief = () => {
         <p className="text-lg leading-relaxed">
           Find relief from stress with our specially designed relaxation techniques and meditation. Our sessions guide you through effective methods to unwind and alleviate tension.
         </p>
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMzM4NTIxNHw&ixlib=rb-4.0.3&q=80&w=1080"
           alt="Stress Relief"
           className="mt-8 w-full h-80 object-cover rounded-lg shadow-lg"
+ width={500} height={300}
         />
       </div>
     </div>

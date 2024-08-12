@@ -1,4 +1,5 @@
 // app/mindfulness/page.tsx
+import Image from 'next/image';
 
 import React from 'react';
 
@@ -10,10 +11,11 @@ const Mindfulness = () => {
         <p className="text-lg leading-relaxed">
           Practice mindfulness and become more aware of the present moment with our guided sessions. Our expert guidance helps you cultivate a mindful approach to daily life.
         </p>
-        <img
+        <Image
           src="https://replicate.delivery/yhqm/z7vBzTNeAQ17baisfAtVBrgoGrbOWjQvax5cqGY6FCgNmnRTA/out-0.webp"
           alt="Mindfulness"
           className="mt-8 w-full h-80 object-cover rounded-lg shadow-lg"
+           width={500} height={300}
         />
       </div>
     </div>

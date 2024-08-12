@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import React, { useState, useEffect } from 'react';
 
@@ -43,7 +44,7 @@ const CoursePage = () => {
       <div className="max-w-4xl mx-auto">
         <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
           {data.image && (
-            <img src={data.image} alt={data.title} className="w-full h-64 object-cover" />
+            <Image src={data.image} alt={data.title} className="w-full h-64 object-cover" width={500} height={300} />
           )}
           <div className="p-6">
             <h1 className="text-4xl font-bold mb-4">{data.title}</h1>

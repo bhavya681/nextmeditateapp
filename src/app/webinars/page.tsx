@@ -1,5 +1,6 @@
 // app/webinars/page.tsx
 
+import Image from 'next/image';
 import React from 'react';
 
 const webinars = [
@@ -20,7 +21,7 @@ const Webinars = () => {
         <div className="space-y-8">
           {webinars.map((webinar) => (
             <div key={webinar.slug} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-              <img src={webinar.image} alt={webinar.title} className="w-full h-48 object-cover" />
+              <Image src={webinar.image} alt={webinar.title} className="w-full h-48 object-cover"  width={500} height={300} />
               <div className="p-6">
                 <h2 className="text-2xl font-bold mb-2">{webinar.title}</h2>
                 <p className="text-lg mb-4">{webinar.description}</p>

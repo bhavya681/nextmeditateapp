@@ -1,5 +1,6 @@
 // app/service/page.tsx
 
+import Image from 'next/image';
 import React from 'react';
 
 const services = [
@@ -41,7 +42,7 @@ const ServicePage = () => {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105">
-              <img src={service.image} alt={service.title} className="w-full h-48 object-cover" />
+              <Image src={service.image} alt={service.title} className="w-full h-48 object-cover" width={500} height={300} />
               <div className="p-6">
                 <h2 className="text-2xl font-bold mb-2">{service.title}</h2>
                 <p className="text-base mb-4">{service.description}</p>

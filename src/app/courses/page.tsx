@@ -1,5 +1,6 @@
 // app/courses/page.tsx
 
+import Image from 'next/image';
 import React from 'react';
 
 const courses = [
@@ -46,7 +47,7 @@ const AllCoursesPage = () => {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {courses.map((course, index) => (
             <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105">
-              <img src={course.image} alt={course.title} className="w-full h-48 object-cover" />
+              <Image src={course.image} alt={course.title} className="w-full h-48 object-cover" width={500} height={300} />
               <div className="p-6">
                 <h2 className="text-2xl font-bold mb-2">{course.title}</h2>
                 <p className="text-base mb-4">{course.description}</p>

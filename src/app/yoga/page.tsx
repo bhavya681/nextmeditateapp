@@ -1,5 +1,6 @@
 // components/GuidedMeditations.tsx
 
+import Image from 'next/image';
 import React from 'react';
 
 const meditations = [
@@ -43,10 +44,11 @@ const YogaPage = () => {
         {meditations.map((meditation, index) => (
           <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
             {meditation.image && (
-              <img
+              <Image
                 src={meditation.image}
                 alt={meditation.title}
                 className="w-full h-40 object-cover rounded-t-lg"
+                width={500} height={300}
               />
             )}
             <div className="p-4">
